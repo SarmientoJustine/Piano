@@ -1,0 +1,656 @@
+*{
+ margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* color: #a58255ff; */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: linear-gradient(rgb(0, 0, 0),rgb(255, 255, 255));
+}
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 10%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  align-items: center;
+}
+.header::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 166, 0, .1);
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+.header::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 166, 0, .1),transparent);
+  transition: .5s;
+}
+.header:hover::after {
+  left: 100%;
+}
+.logo{
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+.navi a{
+  color: white;
+  font-size: 1.15rem;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 1.5rem;
+}
+#check {
+  display: none;
+}
+.icons {
+  font-size: 2.8rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 5%;
+}
+.box-image{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(0deg, transparent, rgb(191, 191, 233, .5), transparent), url(https://images.pexels.com/photos/164743/pexels-photo-164743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.image {
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+}
+.box-image h1, p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top:  30px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+.card {
+  background-color: gray;
+  width: 270px;
+  height: 500px;
+  width: 30%;
+  margin-top: 7%;
+  margin-left: 25px;
+  border-radius: 15px;
+}
+.Hone {
+  color:white;
+  text-align: center;
+}
+.card a{
+  background-color:#a58255;
+  border: 2px solid white;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 20px;
+  margin: 50px 80px;
+  display: block;
+  color: white;
+}
+.card-image {
+  background-color: red;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+.car-1 {
+  background-image: url('images/piano1\ \(Small\).jpeg');
+}
+.car-2 {
+  background-image: url('images/piano2\ \(Small\).jpeg');
+}
+.car-3 {
+  background-image: url('images/piano3\ \(Small\).jpeg');
+}
+.card:hover{
+  background-color: rgb(43, 43, 43);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.09);
+  transition: all 1s ease;
+}
+#piano-one {
+  max-width: 100%;
+  height: 235vh;
+  border: 2px solid blue;
+  background-color:#a58255;
+}
+.intro img {
+  float: left;
+  width: 270px;
+  height: 280px;
+  margin-left: 50px;
+}
+.HoneTwo{
+  margin-top: 120px;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.intro h2 {
+  color: white;
+  text-align: center;
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+.intro p{
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-left: 500px;
+}
+.video {
+  background-color: gray;
+  border: 5px solid darkgray;
+  border-radius: 5px;
+  max-width: 990px;
+  max-height: 970px;
+  margin: 10% 13%;
+}
+.video video{
+  width: 640px;
+  height: 480px;
+  margin-left: 17%;
+  padding-top: 30px;
+}
+.video-h1 {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+}
+#piano-two{
+  max-width: 100%;
+  height: 235vh;
+  border: 2px solid red;
+  background-color:gray;
+}
+#piano-two img {
+  float: left;
+  width: 270px;
+  height: 280px;
+  margin-left: 50px;
+}
+.HoneThree{
+  margin-top: 120px;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.intro-2 h2 {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+.intro-2 p{
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-left: 500px;
+}
+.video-2{
+  background-color:#a58255;
+  border: 5px solid #c79656;
+  border-radius: 5px;
+  max-width: 990px;
+  max-height: 970px;
+  margin: 10% 13%;
+}
+.video-2 video{
+  width: 640px;
+  height: 480px;
+  margin-left: 17%;
+  padding-top: 30px;
+ }
+ #piano-three{
+  max-width: 100%;
+  height: 235vh;
+  border: 2px solid blue;
+  background-color:#a58255;
+ }
+ #piano-three img {
+  float: left;
+  width: 270px;
+  height: 280px;
+  margin-left: 50px;
+
+}
+ .HoneFour{
+  margin-top: 120px;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.intro-3 h2 {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+.intro-3 p{
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-left: 500px;
+}
+.video-3{
+  background-color:gray;
+  border: 5px solid darkgray;
+  border-radius: 5px;
+  max-width: 990px;
+  max-height: 970px;
+  margin: 10% 13%;
+}
+.video-3 video{
+  width: 640px;
+  height: 480px;
+  margin-left: 17%;
+  padding-top: 30px;
+ }
+footer {
+  background-color: rgb(27, 27, 27);
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+}
+.social-icon a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.social-icon a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+/* Hover effect on social media icon :) */
+.social-icon a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+.social-icon a:hover i {
+  background-color: white;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.footNav{
+  margin: 30px 0;
+}
+.footNav ul {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.footNav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footNav ul li a:hover {
+  opacity: 1;
+}
+.footerBottom{
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0 5px;
+}
+/* BREAK POINT */
+@media (max-width: 1024px) {
+  .box-image {
+    width: 100%;
+    height: 350px;
+  }
+  .container {
+    width: 100%;
+    height: 600px;
+  }
+  .intro img{
+    width: 370px;
+    height: 200;
+  }
+  .HoneTwo,
+  .intro h2{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .intro p {
+    font-size: 0.5;
+  }
+  .video{
+    width: 600px;
+    height: 580px;
+    margin-left: 200px;
+  }
+  .video video{
+    width: 540px;
+    height: 380px;
+    margin-left: 22.5px;
+  }
+  .video-h1 {
+    font-size:2rem;
+  }
+  
+}
+@media(max-width: 768px ) {
+  .header {
+      padding: 1.3rem 5%;
+    }
+  .icons {
+    display:inline-flex;
+  }
+  #check:checked~.icons #menu-icon {
+  display: none;
+  }
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked~.icons #close-icon {
+    display: block;
+  }
+  .navi{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(255, 166, 0, .1);
+    backdrop-filter: blur(50px);
+    overflow: hidden;
+    transition: .3s ease;
+  }
+  #check:checked~.navi {
+    height: 17.7rem;
+  }
+  .navi a {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: .3s ease;
+  }
+  
+  #check:checked~.navi a {
+    transform: translateY(0);
+    transition-delay: calc(.15s * var(--i));
+    opacity: 1;
+  }
+}
+@media(max-width:700px){
+  .footNav ul{
+    flex-direction: row;
+  }
+  .footerNav ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  }
+@media(max-width:1024px){
+    .footNav ul{
+      flex-direction:row;
+    }
+    .footerNav ul li{
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+    }
+    .footerContainer {
+      padding: 30px 5px 20px;
+    }
+    .social-icon {
+      font-size: 1em;
+    }
+    }
+@media(max-width:1024px){
+
+  .intro-2 img{
+    width: 370px;
+    height: 200;
+  
+  }
+  .HoneThree,
+  .intro-2 h2{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .intro-2 p {
+    font-size: 0.5;
+  }
+  .video-2{
+    width: 600px;
+    height: 580px;
+    margin-left: 200px;
+  }
+  .video-2 video{
+    width: 540px;
+    height: 380px;
+    margin-left: 22.5px;
+  }
+  .video-h1 {
+    font-size:2rem;
+  }
+}
+@media(max-width:1024px){
+
+  .intro-3 img{
+    width: 370px;
+    height: 200;
+  }
+  .HoneFour,
+  .intro-3 h2{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .intro-3 p {
+    font-size: 0.5;
+  }
+  .video-3{
+    width: 600px;
+    height: 580px;
+    margin-left: 200px;
+  }
+  .video-3 video{
+    width: 540px;
+    height: 380px;
+    margin-left: 22.5px;
+  }
+  .video-h1 {
+    font-size:2rem;
+  }
+}
+@media(max-width:768px) {
+  .card {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left:5px;
+    text-align: justify;
+  }
+  .card-image {
+    height: 100px;
+  }
+}
+@media (max-width:768px){
+  .intro img{
+    width: 270px;
+    height: 280px;
+    float: left;
+  }
+  .HoneTwo{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .intro h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 24px;
+  }
+  .intro p {
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .video{
+    width: 354px;
+    height: 480px;
+    margin-left: 200px;
+  }
+  .video video{
+    width: 310px;
+    padding: 0;
+    height: 280px;
+    margin-left: 12px;
+  }
+  .video-h1 {
+    font-size:1rem;
+  }
+}
+@media (max-width:768px){
+  .intro-2 img{
+    width: 270px;
+    height: 280px;
+    float: left;
+  }
+  .HoneThree{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .intro-2 h2{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 24px;
+  }
+  .intro-2 p {
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .video-2{
+    width: 354px;
+    height: 480px;
+    margin-left: 200px;
+  }
+  .video-2 video{
+    width: 310px;
+    padding: 0;
+    height: 280px;
+    margin-left: 12px;
+  }
+  .video-h1 {
+    font-size:1rem;
+  }
+}
+
+@media (max-width:768px){
+  .intro-3 img{
+    width: 270px;
+    height: 280px;
+    float: left;
+  }
+  .HoneFour{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .intro-3 h2{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 24px;
+  }
+  .intro-3 p {
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .video-3{
+    width: 354px;
+    height: 480px;
+    margin-left: 200px;
+  }
+  .video-3 video{
+    width: 310px;
+    padding: 0;
+    height: 280px;
+    margin-left: 12px;
+  }
+  .video-h1 {
+    font-size:1rem;
+  }
+}
